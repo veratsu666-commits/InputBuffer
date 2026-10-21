@@ -148,7 +148,7 @@ class $modify(BufferedPlayLayer, PlayLayer) {
 };
 
 class $modify(BufferKeys, CCKeyboardDispatcher) {
-    bool dispatchKeyboardMSG(enumKeyCodes key, bool isKeyDown, bool isKeyRepeat) {
+    bool dispatchKeyboardMSG(enumKeyCodes key, bool isKeyDown, bool isKeyRepeat, double timestamp) {
         if (isKeyDown && !isKeyRepeat && (key == KEY_F6 || key == KEY_F7)) {
             // Release anything pending before changing settings so no input gets stuck.
             if (auto* pl = PlayLayer::get()) flushQueue(pl, true);
