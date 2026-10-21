@@ -1,0 +1,13 @@
+{
+	"geode": "4.4.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074"
+	},
+	"id": "yourname.input-buffer",
+	"name": "Input Buffer",
+	"version": "v1.0.0",
+	"developer": "YourName",
+	"description": "Tick-based input delay and smart early-click buffering. F6 cycles ticks, F7 toggles mode."
+}
